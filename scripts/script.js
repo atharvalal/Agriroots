@@ -111,7 +111,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 // Function to make a phone call
 function makeCall() {
-    const phoneNumber = '+9779848751181';
+    const phoneNumber = '+9779709138954';
     window.location.href = 'tel:' + phoneNumber;
 }
 

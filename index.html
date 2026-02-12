@@ -5,6 +5,7 @@
 <head>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgriRoots</title>
@@ -151,30 +152,95 @@
     <section id="contact">
         <div class="container">
             <h2>Get In Touch</h2>
+            <p class="contact-subtitle">We're here to help and answer any questions you might have. We look forward to hearing from you!</p>
+
             <div class="contact-content">
-                <p class="contact-intro">We'd love to hear from you! Reach out to us directly through phone or email.
+                <p class="contact-intro">
+                    Choose your preferred way to connect with us. Whether you want to call, email, or visit us, we're ready to assist you.
                 </p>
-                <div class="contact-buttons">
-                    <button onclick="makeCall()" class="contact-btn call-btn">
-                        <div class="btn-icon">📞</div>
-                        <div class="btn-text">
-                            <span class="btn-label">Call Us</span>
-                            <span class="btn-detail">+977 9848751181</span>
+
+                <!-- Contact Methods Grid -->
+                <div class="contact-methods">
+                    <!-- Phone Card -->
+                    <div class="contact-card phone-card">
+                        <div class="contact-card-inner">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-phone-alt contact-icon"></i>
+                            </div>
+                            <h3>Call Us</h3>
+                            <p>Speak with our friendly team</p>
+                            <p><strong>+977 9876543210</strong></p>
+                            <a href="tel:+9779876543210" class="contact-link">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
                         </div>
-                    </button>
-                    <button onclick="sendEmail()" class="contact-btn email-btn">
-                        <div class="btn-icon">📧</div>
-                        <div class="btn-text">
-                            <span class="btn-label">Email Us</span>
-                            <span class="btn-detail">agrirootsfarms@gmail.com</span>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="contact-card email-card">
+                        <div class="contact-card-inner">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-envelope contact-icon"></i>
+                            </div>
+                            <h3>Email Us</h3>
+                            <p>Send us your inquiries</p>
+                            <p><strong>agrirootsfarms@gmail.com</strong></p>
+                            <a href="mailto:agrirootsfarms@gmail.com" class="contact-link">
+                                <i class="fas fa-paper-plane"></i> Send Email
+                            </a>
                         </div>
-                    </button>
+                    </div>
+
+                    <!-- Location Card -->
+                    <div class="contact-card location-card">
+                        <div class="contact-card-inner">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-map-marker-alt contact-icon"></i>
+                            </div>
+                            <h3>Visit Us</h3>
+                            <p>Come visit our office</p>
+                            <p><strong>Kathmandu, Nepal</strong></p>
+                            <a href="https://maps.google.com" target="_blank" class="contact-link">
+                                <i class="fas fa-directions"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Business Hours Card -->
+                    <div class="contact-card hours-card">
+                        <div class="contact-card-inner">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-clock contact-icon"></i>
+                            </div>
+                            <h3>Business Hours</h3>
+                            <p>We're here to serve you</p>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span class="day">Sunday - Friday</span>
+                                    <span class="time">9:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">Saturday</span>
+                                    <span class="time">10:00 AM - 4:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="business-hours">
-                    <div class="hours-icon">🕒</div>
-                    <div class="hours-text">
-                        <h4>Business Hours</h4>
-                        <p>Sunday - Friday: 9:00 AM - 6:00 PM</p>
+
+                <!-- Social Connect (Optional) -->
+                <div class="social-connect">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link whatsapp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -213,9 +279,9 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-divider"></div> -->
-            
+
             <div class="footer-bottom">
                 <div class="footer-logo">© AgriRoots</div>
                 <div class="footer-tagline">Preserving Nepali Traditions</div>
