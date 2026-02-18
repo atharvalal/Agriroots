@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgriRoots</title>
-
+    <title>AgriRoots — Authentic Nepali Snacks</title>
 </head>
 
 <body>
+
     <!-- Navigation -->
-    <nav>
+    <nav id="mainNav">
         <div class="nav-container">
             <a href="#home" class="logo">
                 <img src="Images/logo.png" alt="AgriRoots Logo">
             </a>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -35,42 +34,43 @@
             <div class="slider-wrapper swiper-wrapper">
                 <div class="slider-item swiper-slide">
                     <div class="slider-content">
-                        <h3 class="slider-subtitle">Slide 01</h3>
+                        <h3 class="slider-subtitle">Traditional Recipe</h3>
                         <h2 class="slider-title">Thekua</h2>
-                        <p class="slide-description">Authentic taste turned into a real Snack</p>
-                        <a href="#products" class="slide-button"><span>Learn More</span></a>
+                        <p class="slide-description">Authentic Himalayan flavour,<br>crafted from generations of
+                            tradition</p>
+                        <a href="#products" class="slide-button"><span>Explore Products</span></a>
                     </div>
                 </div>
                 <div class="slider-item swiper-slide">
                     <div class="slider-content">
-                        <h3 class="slider-subtitle">Slide 02</h3>
+                        <h3 class="slider-subtitle">Festival Favourite</h3>
                         <h2 class="slider-title">Khapse</h2>
-                        <p class="slide-description">Authentic taste turned into a real Snack</p>
-                        <a href="#products" class="slide-button"><span>Learn More</span></a>
+                        <p class="slide-description">Crispy, golden perfection<br>for every celebration</p>
+                        <a href="#products" class="slide-button"><span>Explore Products</span></a>
                     </div>
                 </div>
                 <div class="slider-item swiper-slide">
                     <div class="slider-content">
-                        <h3 class="slider-subtitle">Slide 03</h3>
-                        <h2 class="slider-title">Thekua</h2>
-                        <p class="slide-description">Authentic taste turned into a real Snack</p>
-                        <a href="#products" class="slide-button"><span>Learn More</span></a>
+                        <h3 class="slider-subtitle">Organic & Pure</h3>
+                        <h2 class="slider-title">Farm Fresh</h2>
+                        <p class="slide-description">Sourced directly from<br>Nepali farmers with pride</p>
+                        <a href="#products" class="slide-button"><span>Explore Products</span></a>
                     </div>
                 </div>
                 <div class="slider-item swiper-slide">
                     <div class="slider-content">
-                        <h3 class="slider-subtitle">Slide 04</h3>
-                        <h2 class="slider-title">Thekua</h2>
-                        <p class="slide-description">Authentic taste turned into a real Snack</p>
-                        <a href="#products" class="slide-button"><span>Learn More</span></a>
+                        <h3 class="slider-subtitle">Naturally Sweet</h3>
+                        <h2 class="slider-title">Honey & Spice</h2>
+                        <p class="slide-description">Himalayan honey meets<br>time-honoured recipes</p>
+                        <a href="#products" class="slide-button"><span>Explore Products</span></a>
                     </div>
                 </div>
                 <div class="slider-item swiper-slide">
                     <div class="slider-content">
-                        <h3 class="slider-subtitle">Slide 05</h3>
-                        <h2 class="slider-title">Thekua</h2>
-                        <p class="slide-description">Authentic taste turned into a real Snack</p>
-                        <a href="#products" class="slide-button"><span>Learn More</span></a>
+                        <h3 class="slider-subtitle">Premium Quality</h3>
+                        <h2 class="slider-title">Heritage</h2>
+                        <p class="slide-description">Preserving the soul of Nepal<br>one bite at a time</p>
+                        <a href="#products" class="slide-button"><span>Explore Products</span></a>
                     </div>
                 </div>
             </div>
@@ -79,9 +79,9 @@
                     <div class="slider-indicator"></div>
                     <li class="slider-tab">Thekua</li>
                     <li class="slider-tab">Khapse</li>
-                    <li class="slider-tab">Thekua</li>
-                    <li class="slider-tab">Thekua</li>
-                    <li class="slider-tab">Thekua</li>
+                    <li class="slider-tab">Farm Fresh</li>
+                    <li class="slider-tab">Honey &amp; Spice</li>
+                    <li class="slider-tab">Heritage</li>
                 </ul>
             </div>
         </div>
@@ -91,18 +91,39 @@
     <section id="about">
         <div class="container">
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text reveal">
                     <h2>About Us</h2>
-                    <p>AgriRoots has been a leader in authentic Nepali traditional snacks. Our commitment to excellence and
-                        customer satisfaction has made us a trusted name in Nepal.</p>
-                    <p>We pride ourselves on delivering authentic products that bring traditional Nepali flavors to modern
-                        tables. With a team of dedicated professionals and traditional recipes passed down through generations, we continue to preserve
-                        the taste that defines our heritage.</p>
-                    <p>Our mission is to share the authentic taste of Nepali tradition with everyone while maintaining the
-                        highest quality standards and supporting local farmers.</p>
+                    <p class="about-intro">A story rooted in the mountains — where every snack carries the warmth of
+                        Nepali tradition.</p>
+                    <p>AgriRoots was born from a simple belief: that the authentic flavours of Nepal deserve to be
+                        celebrated. Our commitment to excellence and customer satisfaction has made us a trusted name
+                        across the country.</p>
+                    <p>We work hand-in-hand with local farmers, using traditional recipes passed down through
+                        generations, to craft snacks that honour our heritage while meeting modern quality standards.
+                    </p>
+                    <p>Our mission is to bring the genuine taste of Nepali culture to every table — preserving
+                        tradition, supporting communities, and creating moments worth savouring.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Farm Partners</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Product Lines</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Zero</span>
+                            <span class="stat-label">Compromise</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-image">
-                    🏔️
+                <div class="about-image reveal">
+                    <div class="about-image-inner">🏔️</div>
+                    <div class="about-badge">
+                        <span>100%</span>
+                        <span>Authentic Nepali</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -111,39 +132,125 @@
     <!-- Products Section -->
     <section id="products">
         <div class="container">
+            <span class="section-label">What We Offer</span>
             <h2>Our Products</h2>
-            <div class="products-grid">
+            <p class="products-subtitle">Crafted with care, rooted in tradition</p>
+            <div class="products-grid reveal-stagger">
+
                 <div class="product-card">
-                    <div class="product-icon">🏔️</div>
-                    <h3>Himalayan Thekua</h3>
-                    <p>Authentic traditional recipe passed down through generations, made with the finest ingredients from the Himalayan region.
-                    </p>
+                    <div class="product-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800&q=80')">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-tag">Signature</span>
+                        <h3>Himalayan Thekua</h3>
+                        <p>Authentic traditional recipe passed down through generations, made with the finest
+                            ingredients from the Himalayan region.</p>
+                    </div>
+                    <div class="product-overlay">
+                        <span class="product-number">01</span>
+                        <h3>Himalayan Thekua</h3>
+                        <p>Authentic traditional recipe passed down through generations, made with the finest
+                            ingredients from the Himalayan region.</p>
+                        <span class="product-overlay-tag">Signature</span>
+                    </div>
                 </div>
+
                 <div class="product-card">
-                    <div class="product-icon">🌶️</div>
-                    <h3>Spicy Varieties</h3>
-                    <p>Innovative flavors while maintaining the traditional essence that makes Thekua special, with authentic Nepali spices.</p>
+                    <div class="product-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1630851840633-f96999247032?w=800&q=80')">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-tag">Bold Flavour</span>
+                        <h3>Spicy Varieties</h3>
+                        <p>Innovative flavours while maintaining the traditional essence — with authentic Nepali spices
+                            that awaken the senses.</p>
+                    </div>
+                    <div class="product-overlay">
+                        <span class="product-number">02</span>
+                        <h3>Spicy Varieties</h3>
+                        <p>Innovative flavours while maintaining the traditional essence — with authentic Nepali spices
+                            that awaken the senses.</p>
+                        <span class="product-overlay-tag">Bold Flavour</span>
+                    </div>
                 </div>
+
                 <div class="product-card">
-                    <div class="product-icon">🌾</div>
-                    <h3>Organic Options</h3>
-                    <p>Made with organic ingredients from Nepali farms for health-conscious consumers who love traditional taste.</p>
+                    <div class="product-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf?w=800&q=80')">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-tag">Health First</span>
+                        <h3>Organic Options</h3>
+                        <p>Made with certified organic ingredients from Nepali farms for health-conscious consumers who
+                            love traditional taste.</p>
+                    </div>
+                    <div class="product-overlay">
+                        <span class="product-number">03</span>
+                        <h3>Organic Options</h3>
+                        <p>Made with certified organic ingredients from Nepali farms for health-conscious consumers who
+                            love traditional taste.</p>
+                        <span class="product-overlay-tag">Health First</span>
+                    </div>
                 </div>
+
                 <div class="product-card">
-                    <div class="product-icon">🎁</div>
-                    <h3>Festival Packages</h3>
-                    <p>Beautifully packaged traditional snacks perfect for Dashain, Tihar, and other Nepali celebrations.</p>
+                    <div class="product-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=800&q=80')">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-tag">Gift Ready</span>
+                        <h3>Festival Packages</h3>
+                        <p>Beautifully curated traditional snacks, perfectly packaged for Dashain, Tihar, and all Nepali
+                            celebrations.</p>
+                    </div>
+                    <div class="product-overlay">
+                        <span class="product-number">04</span>
+                        <h3>Festival Packages</h3>
+                        <p>Beautifully curated traditional snacks, perfectly packaged for Dashain, Tihar, and all Nepali
+                            celebrations.</p>
+                        <span class="product-overlay-tag">Gift Ready</span>
+                    </div>
                 </div>
+
                 <div class="product-card">
-                    <div class="product-icon">🍯</div>
-                    <h3>Honey Sweet</h3>
-                    <p>Natural honey-sweetened Thekua from Himalayan bees for those who prefer healthier alternatives.</p>
+                    <div class="product-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800&q=80')">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-tag">Natural</span>
+                        <h3>Honey Sweet</h3>
+                        <p>Natural Himalayan honey-sweetened Thekua — a healthier, wholesome alternative you can feel
+                            good about.</p>
+                    </div>
+                    <div class="product-overlay">
+                        <span class="product-number">05</span>
+                        <h3>Honey Sweet</h3>
+                        <p>Natural Himalayan honey-sweetened Thekua — a healthier, wholesome alternative you can feel
+                            good about.</p>
+                        <span class="product-overlay-tag">Natural</span>
+                    </div>
                 </div>
+
                 <div class="product-card">
-                    <div class="product-icon">⭐</div>
-                    <h3>Premium Quality</h3>
-                    <p>Premium ingredients and traditional methods ensure the best quality in every bite, following Nepali standards.</p>
+                    <div class="product-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1606101273945-e9eba87d42f4?w=800&q=80')">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-tag">Best Seller</span>
+                        <h3>Premium Quality</h3>
+                        <p>Premium ingredients and time-honoured methods ensure the best quality in every bite,
+                            following Nepali standards.</p>
+                    </div>
+                    <div class="product-overlay">
+                        <span class="product-number">06</span>
+                        <h3>Premium Quality</h3>
+                        <p>Premium ingredients and time-honoured methods ensure the best quality in every bite,
+                            following Nepali standards.</p>
+                        <span class="product-overlay-tag">Best Seller</span>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -151,16 +258,14 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p class="contact-subtitle">We're here to help and answer any questions you might have. We look forward to hearing from you!</p>
+            <span class="section-label">Get In Touch</span>
+            <h2>Reach Out</h2>
+            <p class="contact-subtitle">We're here to help and answer any questions you might have.</p>
 
             <div class="contact-content">
-                <p class="contact-intro">
-                    Choose your preferred way to connect with us. Whether you want to call, email, or visit us, we're ready to assist you.
-                </p>
+                <p class="contact-intro"></p>
 
-                <!-- Contact Methods Grid -->
-                <div class="contact-methods">
+                <div class="contact-methods reveal-stagger">
                     <!-- Phone Card -->
                     <div class="contact-card phone-card">
                         <div class="contact-card-inner">
@@ -168,7 +273,7 @@
                                 <i class="fas fa-phone-alt contact-icon"></i>
                             </div>
                             <h3>Call Us</h3>
-                            <p>Speak with our friendly team</p>
+                            <p>Speak with our team</p>
                             <p><strong>+977 9709138954</strong></p>
                             <a class="contact-link" onclick="makeCall()">
                                 <i class="fas fa-phone"></i> Call Now
@@ -183,7 +288,7 @@
                                 <i class="fas fa-envelope contact-icon"></i>
                             </div>
                             <h3>Email Us</h3>
-                            <p>Send us your inquiries</p>
+                            <p>Send your inquiries</p>
                             <p><strong>agrirootsfarms@gmail.com</strong></p>
                             <a href="mailto:agrirootsfarms@gmail.com" class="contact-link">
                                 <i class="fas fa-paper-plane"></i> Send Email
@@ -198,7 +303,7 @@
                                 <i class="fas fa-map-marker-alt contact-icon"></i>
                             </div>
                             <h3>Visit Us</h3>
-                            <p>Come visit our office</p>
+                            <p>Come see our office</p>
                             <p><strong>Kathmandu, Nepal</strong></p>
                             <a href="https://maps.app.goo.gl/3fNKPWoSz35EZ5XP9" target="_blank" class="contact-link">
                                 <i class="fas fa-directions"></i> Get Directions
@@ -212,33 +317,35 @@
                             <div class="contact-icon-wrapper">
                                 <i class="fas fa-clock contact-icon"></i>
                             </div>
-                            <h3>Business Hours</h3>
+                            <h3>Hours</h3>
                             <p>We're here to serve you</p>
                             <div class="hours-list">
                                 <div class="hours-item">
-                                    <span class="day">Sunday - Friday</span>
-                                    <span class="time">9:00 AM - 6:00 PM</span>
+                                    <span class="day">Sun – Fri</span>
+                                    <span class="time">9 AM – 6 PM</span>
                                 </div>
                                 <div class="hours-item">
                                     <span class="day">Saturday</span>
-                                    <span class="time">10:00 AM - 4:00 PM</span>
+                                    <span class="time">10 AM – 4 PM</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Social Connect (Optional) -->
+                <!-- Social Connect -->
                 <div class="social-connect">
                     <h4>Connect With Us</h4>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/agriroots.farms/" class="social-link facebook" aria-label="Facebook">
+                        <a href="https://www.facebook.com/agriroots.farms/" class="social-link facebook"
+                            aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="https://wa.me/9709138954" class="social-link whatsapp" aria-label="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <a href="https://www.instagram.com/agriroots.farms/" class="social-link instagram" aria-label="Instagram">
+                        <a href="https://www.instagram.com/agriroots.farms/" class="social-link instagram"
+                            aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -248,46 +355,11 @@
     </section>
 
     <footer>
-        <!-- <div class="footer-content">
-            <div class="contact-info">
-                <div class="info-item">
-                    <div class="info-icon">📍</div>
-                    <div>
-                        <h3>Address</h3>
-                        <p>Kathmandu, Nepal</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="info-icon">📞</div>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>+977 970-9138954</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="info-icon">✉️</div>
-                    <div>
-                        <h3>Email</h3>
-                        <p>agrirootsfarms@gmail.com</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="info-icon">🕒</div>
-                    <div>
-                        <h3>Business Hours</h3>
-                        <p>Sun - Fri: 9:00 AM - 6:00 PM</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-divider"></div> -->
-
-            <div class="footer-bottom">
-                <div class="footer-logo">© AgriRoots</div>
-                <div class="footer-tagline">Preserving Nepali Traditions</div>
-                <div class="footer-copyright">All Rights Reserved © 2026</div>
-                <div class="footer-location">Kathmandu, Nepal 🇳🇵</div>
-            </div>
+        <div class="footer-bottom">
+            <div class="footer-logo">© AgriRoots</div>
+            <div class="footer-tagline">Preserving Nepali Traditions</div>
+            <div class="footer-copyright">All Rights Reserved © 2026</div>
+            <div class="footer-location">Kathmandu, Nepal 🇳🇵</div>
         </div>
     </footer>
 
