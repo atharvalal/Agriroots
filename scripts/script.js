@@ -3,35 +3,13 @@ const swiper = new Swiper('.slider-container', {
     effect: 'fade',
     loop: true,
     speed: 1100,
+    pagination: {
+        el: '.slider-dots',
+        clickable: true,
+    },
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
-    }
-});
-
-// ==================== CUSTOM PAGINATION ====================
-const tabs = document.querySelectorAll('.slider-tab');
-const indicator = document.querySelector('.slider-indicator');
-
-const updatePagination = (index) => {
-    tabs.forEach((tab, i) => tab.classList.toggle('active', i === index));
-    const activeTab = tabs[index];
-    if (activeTab && indicator) {
-        indicator.style.transform = `translateX(${activeTab.offsetLeft - 40}px)`;
-        indicator.style.width = `${activeTab.offsetWidth}px`;
-    }
-};
-
-tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => swiper.slideToLoop(index));
-});
-
-swiper.on('slideChange', () => updatePagination(swiper.realIndex));
-
-// Initialize
-window.addEventListener('load', () => {
-    if (tabs[0]) {
-        updatePagination(0);
     }
 });
 
