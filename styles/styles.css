@@ -322,7 +322,7 @@ nav:not(.scrolled) .menu-toggle:active {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url("../Images/ThekuaWithBackgorund.PNG");
+    background-image: url("../Images/FirstImage-Slider.png");
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -336,15 +336,15 @@ nav:not(.scrolled) .menu-toggle:active {
 }
 
 .slider-wrapper .slider-item.slider-2::before {
-    background-image: url("../Images/ThekuaSecondImageBg.png");
+    background-image: url("../Images/ThekuaWithBackgorund.PNG");
 }
 
 .slider-wrapper .slider-item.slider-3::before {
-    background-image: url("https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=1920&q=80");
+    background-image: url("../Images/ThekuaSecondImageBg.png");
 }
 
 .slider-wrapper .slider-item.slider-4::before {
-    background-image: url("https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=1920&q=80");
+    background-image: url("../Images/Khapse.png");
 }
 
 .slider-wrapper .slider-item.slider-5::before {
