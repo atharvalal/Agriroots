@@ -322,7 +322,7 @@ nav:not(.scrolled) .menu-toggle:active {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url("../Images/FirstImage-Slider.png");
+    background-image: url("../Images/FirstImageSliderClear.PNG");
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -344,7 +344,7 @@ nav:not(.scrolled) .menu-toggle:active {
 }
 
 .slider-wrapper .slider-item.slider-4::before {
-    background-image: url("../Images/Khapse.png");
+    background-image: url("../Images/KhapseFloating.png");
 }
 
 .slider-wrapper .slider-item.slider-5::before {
