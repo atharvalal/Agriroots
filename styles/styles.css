@@ -344,10 +344,13 @@ nav:not(.scrolled) .menu-toggle:active {
 }
 
 .slider-wrapper .slider-item.slider-4::before {
-    background-image: url("../Images/KhapseFloating.png");
+    background-image: url("../Images/khapse.ico");
 }
 
 .slider-wrapper .slider-item.slider-5::before {
+    background-image: url("../Images/khurma.ico");
+}
+.slider-wrapper .slider-item.slider-6::before {
     background-image: url("../Images/background.jpg");
 }
 
