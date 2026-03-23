@@ -36,7 +36,6 @@ window.addEventListener('scroll', () => {
 function toggleMenu() {
     const navLinks = document.getElementById('navLinks');
     navLinks.classList.toggle('active');
-    // Blur the button immediately so :active style doesn't stick on mobile
     const btn = document.querySelector('.menu-toggle');
     if (btn) btn.blur();
 }
@@ -73,6 +72,22 @@ const revealObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => {
     revealObserver.observe(el);
 });
+
+// ==================== FAQ TOGGLE ====================
+function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+
+    // Close all open items
+    document.querySelectorAll('.faq-item.open').forEach(openItem => {
+        openItem.classList.remove('open');
+    });
+
+    // Open clicked item if it wasn't already open
+    if (!isOpen) {
+        item.classList.add('open');
+    }
+}
 
 // ==================== CONTACT FUNCTIONS ====================
 function makeCall() {
