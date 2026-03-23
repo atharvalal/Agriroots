@@ -984,14 +984,7 @@ h2::after {
 }
 
 #our-story::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 40%;
-    height: 60%;
-    background: linear-gradient(135deg, rgba(44, 95, 63, 0.05) 0%, transparent 100%);
-    pointer-events: none;
+    display: none;
 }
 
 .story-content {
@@ -1606,28 +1599,13 @@ h2::after {
     filter: none;
 }
 
-/* Fallback store badge (icon + text) */
-.wtb-store-badge {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6rem;
-    color: var(--charcoal-mid);
+/* Slightly larger Flipkart logo for visual balance */
+.wtb-flipkart-img {
+    max-height: 80px;
+    max-width: 200px;
 }
 
-.wtb-store-badge i {
-    font-size: 2rem;
-    color: var(--terracotta);
-}
 
-.wtb-store-badge span {
-    font-family: 'Jost', sans-serif;
-    font-size: 0.88rem;
-    font-weight: 500;
-    color: var(--charcoal);
-    letter-spacing: 0.02em;
-    text-align: center;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
