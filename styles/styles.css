@@ -314,6 +314,10 @@ nav:not(.scrolled) .menu-toggle:hover {
 }
 
 .slider-wrapper .slider-item.slider-6::before {
+    background-image: url("../Images/lakhamari.png");
+}
+
+.slider-wrapper .slider-item.slider-7::before {
     background-image: url("../Images/background.jpg");
 }
 
@@ -870,6 +874,15 @@ h2::after {
     grid-column: 1;
 }
 
+.product-detail-grid--single {
+    grid-template-columns: minmax(0, 760px);
+    justify-content: center;
+}
+
+.product-detail-grid--single .product-detail-body p {
+    flex: 0;
+}
+
 .product-detail-card {
     display: flex;
     flex-direction: column;
@@ -892,6 +905,14 @@ h2::after {
     background-position: center;
     transition: transform 0.6s ease;
     flex-shrink: 0;
+}
+
+.product-detail-card .product-img--contain {
+    height: auto;
+    aspect-ratio: 1264 / 842;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-detail-card:hover .product-img {
@@ -1456,7 +1477,8 @@ h2::after {
 .wtb-card {
     background: white;
     border-radius: 16px;
-    padding: 2.8rem 1.5rem;
+    padding: 1.8rem 1.5rem;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1630,6 +1652,170 @@ h2::after {
     }
 }
 
+.partner-group {
+    margin-top: 3rem;
+}
+
+.partner-group:first-of-type {
+    margin-top: 0;
+}
+
+.partner-group-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin: 0 auto 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(193, 68, 14, 0.13);
+}
+
+.partner-group-heading span {
+    font-family: 'Satisfy', cursive;
+    font-size: 0.95rem;
+    color: var(--terracotta);
+}
+
+.partner-group-heading h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.65rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    line-height: 1;
+}
+
+.wtb-grid--partners {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+}
+
+.partner-group .wtb-card {
+    min-height: 118px;
+}
+
+a.wtb-card {
+    text-decoration: none;
+}
+
+.wtb-card {
+    position: relative;
+    min-width: 0;
+}
+
+.wtb-card::after {
+    content: '';
+    position: absolute;
+    inset: auto 1.1rem 0;
+    height: 2px;
+    background: var(--terracotta);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.28s ease;
+}
+
+.wtb-card:hover::after {
+    transform: scaleX(1);
+}
+
+.wtb-square-logo {
+    max-height: 76px;
+    max-width: 116px;
+}
+
+.wtb-wordmark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 58px;
+    max-width: 100%;
+    padding: 0.25rem 0.4rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.wtb-wordmark.horizon {
+    color: #163F76;
+}
+
+.wtb-wordmark.safal {
+    color: #198754;
+}
+
+.wtb-wordmark.bestbuy {
+    color: #111111;
+    background: #fff200;
+    border-radius: 3px;
+    padding: 0.55rem 0.75rem;
+    font-size: 0.95rem;
+}
+
+.airport-note {
+    margin: 3rem auto 0;
+    max-width: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.85rem;
+    padding: 1.15rem 1.4rem;
+    background: var(--forest-dark);
+    color: rgba(255, 255, 255, 0.86);
+    border-radius: 6px;
+    box-shadow: var(--shadow-card);
+    text-align: center;
+}
+
+.airport-note i {
+    color: var(--gold-light);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.airport-note span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.partner-group--existing .wtb-grid {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .wtb-grid--partners {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+    .partner-group-heading {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 0.35rem;
+    }
+
+    .wtb-grid--partners {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .airport-note {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .wtb-grid--partners {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ==================== GALLERY SECTION ==================== */
 #gallery {
     background: var(--charcoal);
@@ -1728,6 +1914,60 @@ h2::after {
     font-weight: 300;
     margin-bottom: 4rem;
     margin-top: 1.5rem;
+}
+
+.media-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 3.5rem;
+}
+
+.media-card {
+    min-height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.15rem 1.25rem;
+    background: white;
+    color: var(--charcoal);
+    text-decoration: none;
+    border: 1px solid rgba(193, 68, 14, 0.12);
+    border-radius: 6px;
+    box-shadow: 0 2px 12px rgba(30, 30, 30, 0.04);
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.media-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(193, 68, 14, 0.32);
+    box-shadow: var(--shadow-card);
+}
+
+.media-card span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.media-card i {
+    color: var(--terracotta);
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+    .media-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .media-links {
+        grid-template-columns: 1fr;
+        margin-bottom: 2.5rem;
+    }
 }
 
 .faq-grid {
